@@ -82,7 +82,7 @@ def index():
   #graph seven
   top5  = df.head(10)
   fig7= px.scatter_3d(top5, x='country', y='industry',z ='valuation',
-              color='country')
+              color='company')
   fig7.update_layout(showlegend=False,template = 'plotly_dark', title='<b>Top 10 unicorns in the world with the highest valuation<b>',titlefont={'size': 14} )
   graph7JSON = json.dumps(fig7, cls= plotly.utils.PlotlyJSONEncoder)
 
