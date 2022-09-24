@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "latolight";
+  src: url("./fonts/Lato-Light.ttf") format("woff2"),
+    url("./fonts/Lato-Light.ttf") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latobold";
+  src: url("./fonts/Lato-Bold.ttf") format("woff2"),
+    url("./fonts/Lato-Bold.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+strong, b {
+  font-family: latobold;
+}
+*{
+  padding: 0px;
+  margin: 0;
+  font-family: latolight;
+}
+
+.breakdown{
+  padding-top: 30px ;
+}
+
+.navbar{
+  background-color: #0054a5;
+}
+.navbar-text{
+color: rgb(250, 250 , 250)
+}
+
+.navbar-brand{
+  background-color: #0054a5;
+  font-family: latolight;
+  font-size: 2.5rem;
+  
+}
+
+.navbar-brand:hover {
+  color: rgb(250, 250, 250);
+  font-family: latolight;
+}
+
+.site-header-logo h1 {
+  font-family: latobold;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.forwardschool{
+  height: 70px;
+  width: 150px;
+}
+
+.margin30{
+  margin-bottom: 30px;
+}
+
+footer{
+  background-color: #004384;
+}
+
+.img-big{
+  height: 418px;
+  width: 600px;
+}
+
+h2{
+  margin-top: 43px;
+  margin-bottom: 13px;
+}

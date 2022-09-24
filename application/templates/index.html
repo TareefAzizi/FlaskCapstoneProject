@@ -1,0 +1,195 @@
+{%extends "layout.html"%}
+{%block content%}
+ <div class="site-header-logo">
+   <h1 class="text-uppercase my-4 text-center " id="Introduction">
+     <u>Unicorn Startup Data Analysis</u>
+   </h1>
+   <h4 class="text-center padding30">by: Tareef Iman Azizi</h4>
+ </div>
+ <div class="container">
+  <div class="card">
+    <div class="row">
+       <div class="col-md-6 ">
+        <img src="{{url_for('static', filename='wallstreet.jpeg')}}" alt="money" class="img-fluid rounded-start" >
+      </div>
+      <div class="col md-8">
+        <div class="card-body">
+          <h3 class="card-title" >Introduction</h3>
+          <p class="card-text">This is my Capstone Project for the Data Science semester of forward school. The graphs show the analysis of <b>Unicorn Startups as of August 2022</b>. 
+            The graphs were plotted using Plotly express. This dataset can be found on Kaggle. We extracted and cleaned this data using pandas. In business, <b>a unicorn is a privately held startup company valued at over $1 BILLION DOLLARS. </b>
+          </p>
+          <a href="https://www.investopedia.com/terms/u/unicorn.asp">
+          <button class="btn btn-primary">Click here to learn more</button>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h1 class="text-center text-uppercase breakdown" id="Breakdown"> The Analysis</h1>
+<h2 class="text-center"> Overview of unicorns</h2>
+  <div class="card mb-4 m-auto" style="width: 80%;">
+      <div class="">
+          <div id="chart1"></div>
+
+      </div>
+      </div>
+      <h2 class="text-center">Industries with the highest valuation</h2>
+      <div class="card mb-4 m-auto " style="width: 80%;" data-aos="fade-left">
+        <div class="">
+            <div id="chart2"></div>
+        </div>
+    </div>
+    <h2 class="text-center">Yearly Listed Unicorn by Industry</h2>
+    <div class="card mb-4 m-auto " style="width: 80%;" data-aos="fade-left">
+      <div class="">
+          <div id="chart3"></div>
+
+      </div>
+  </div>
+  <h2 class="text-center">Amount of Unicorn Startups in an Industry</h2>
+  <div class="card mb-4 m-auto" style="width: 80%;" data-aos="fade-left">
+    <div class="">
+        <div id="chart4"></div>
+    </div>
+</div>
+<h2 class="text-center">The Rise of Unicorn Startups</h2>
+<div class="card mb-4 m-auto" style="width: 80%;" data-aos="fade-left">
+  <div class="">
+      <div id="chart5"></div>
+  </div>
+</div>
+<h2 class="text-center">Percentage of Where Unicorn Startups come from</h2>
+<div class="card mb-4 m-auto" style="width: 80%;" data-aos="fade-left">
+  <div class="">
+      <div id="chart6"></div>
+  </div>
+</div>
+<h2 class="text-center">Top 10 Unicorns with the highest valuation</h2>
+<div class="card mb-4 m-auto" style="width: 80%;" data-aos="fade-left">
+  <div class="">
+      <div id="chart7"></div>
+  </div>
+</div>
+<h2 class="text-center">Yearly Listed Unicorn by Country</h2>
+<div class="card mb-4 m-auto" style="width: 80%;" data-aos="fade-left">
+  <div class="">
+      <div id="chart8"></div>
+  </div>
+</div>
+<h2 class="text-center"> Cities with the higest amount of Unicorn Startups</h2>
+<div class="card mb-4 m-auto " style="width: 80%;" data-aos="fade-left">
+  <div class="">
+      <div id="chart9"></div>
+
+  </div>
+</div>
+<h2 class="text-center">United States vs China</h2>
+<div class="card mb-4 m-auto" style="width: 80%;" data-aos="fade-left">
+  <div class="">
+      <div id="chart10"></div>
+  </div>
+</div>
+
+</div>
+
+<h1 class="text-center" id="Conclusion">What should we expect for the  future?</h1>
+<div class="container">
+  <div class="card">
+    <div class="row">
+      <div class="col md-8">
+        <div class="card-body">
+          <h3 class="card-title" >Introduction</h3>
+          <p class="card-text">This is my Capstone Project for the Data Science semester of forward school. The graphs show the analysis of <b>Unicorn Startups as of August 2022</b>. 
+            The graphs were plotted using Plotly express. This dataset can be found on Kaggle. We extracted and cleaned this data using pandas. In business, <b>a unicorn is a privately held startup company valued at over $1 BILLION DOLLARS. </b>
+          </p>
+          <a href="https://www.investopedia.com/terms/u/unicorn.asp">
+          <button class="btn btn-primary">Click here to learn more</button>
+        </a>
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <img src="{{url_for('static', filename='moneys.gif')}}" alt="money" class="img-fluid rounded-start img-big" >
+      </div>
+    </div>
+  </div>
+</div>
+<div class="">
+<footer class="text-center text-white">
+  <div class="container p-4">
+    <section class="mb-4">
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+
+      <!-- youtube -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" role="button"
+        ><i class="fab fa-youtube"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjf-8Ttjqr6AhX-8zgGHUHxCwEQFnoECA4QAQ&url=https%3A%2F%2Fgithub.com%2FTareefIman&usg=AOvVaw1lPVg3pYdQVXGEskggZUtx" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+
+    <section class="mb-4">
+      <p>
+      Feel free to use this in your upcoming projects / presentations :) <br>(code is on github)
+      </p>
+    </section>
+
+  </div>
+ 
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #002950">
+    Made by: Tareef Iman Azizi 
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  
+</div>
+
+  
+
+<!-- End of .container -->
+
+ <!-- PLOTLY CDN-->
+ <script src="https://kit.fontawesome.com/5c96c3dc62.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+ <script type="text/javascript">
+     var graphs1 = {{ graph1JSON | safe}};
+     Plotly.plot("chart1", graphs1,{});
+    
+     var graphs2 = {{ graph2JSON | safe}};
+     Plotly.plot("chart2", graphs2,{});
+     
+     var graphs3 = {{ graph3JSON | safe}};
+     Plotly.plot("chart3", graphs3,{});
+
+     var graphs4 = {{ graph4JSON | safe}};
+     Plotly.plot("chart4", graphs4,{});
+
+     var graphs5 = {{ graph5JSON | safe}};
+     Plotly.plot("chart5", graphs5,{});
+
+     var graphs6 = {{ graph6JSON | safe}};
+     Plotly.plot("chart6", graphs6,{});
+
+     var graphs7 = {{ graph7JSON | safe}};
+     Plotly.plot("chart7", graphs7,{});
+
+     var graphs8 = {{ graph8JSON | safe}};
+     Plotly.plot("chart8", graphs8,{});
+
+     var graphs9 = {{ graph9JSON | safe}};
+     Plotly.plot("chart9", graphs9,{});
+
+     var graphs10 = {{ graph10JSON | safe}};
+     Plotly.plot("chart10", graphs10,{});
+</script>
+{%endblock%}
