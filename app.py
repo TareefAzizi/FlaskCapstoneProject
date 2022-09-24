@@ -1,3 +1,6 @@
-from flask import Flask
+from email.mime import application
+from flask import Flask, render_template
 
-app = Flask(__name__)
+
+app = application(__name__)
+
