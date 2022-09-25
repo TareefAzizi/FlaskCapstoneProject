@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 
 @app.route('/')
 def index():
-  df = pd.read_csv('/Users/tareef/Documents/forward school/python semester 1/unicornsSep2022.csv')
+  df = pd.read_csv('application/static/unicornsSep2022.csv')
   vc = df['Industry'].value_counts()
   df_ref = df.loc[df['Industry'].isin(vc[vc == 1].index)]
   df_ref
