@@ -41,7 +41,7 @@ def index():
   
 
   #Graph two 
-  fig2 = px.bar(df, x='valuation',y='industry',color ='industry',hover_name='valuation',)
+  fig2 = px.bar(df, x='valuation',y='industry',color ='industry',hover_name='company',)
   fig2.update_layout(showlegend=False, yaxis_title='Industry',xaxis=dict(showline=True,showgrid=False,showticklabels=True,linecolor='rgb(204,204,204)',
                              tickfont=dict(family='Arial',size=12), ),
                              yaxis=dict(linecolor='rgb(150,150,150)',showline=True,showgrid=False),template = 'plotly_dark', title='<b>Industries with the highest valuation<b>')
@@ -81,8 +81,8 @@ def index():
 
   #graph seven
   top5  = df.head(10)
-  fig7= px.scatter_3d(top5, x='country', y='industry',z ='valuation',
-              color='country')
+  fig7= px.scatter_3d(top5,  x='country', y='industry',z ='valuation',
+              color='company',hover_name='company')
   fig7.update_layout(showlegend=False,template = 'plotly_dark', title='<b>Top 10 unicorns in the world with the highest valuation<b>',titlefont={'size': 14} )
   graph7JSON = json.dumps(fig7, cls= plotly.utils.PlotlyJSONEncoder)
 
@@ -96,7 +96,7 @@ def index():
   #graph nine
   twentyCountry=df.head(45)
 
-  fig9 = px.bar(twentyCountry, x='city', y='valuation')
+  fig9 = px.bar(twentyCountry, x='city', y='valuation', hover_name='industry')
   fig9.update_layout(showlegend=False,template = 'plotly_dark', title= "Cities with the highest amount of Unicorn Startups")
   graph9JSON = json.dumps(fig9, cls= plotly.utils.PlotlyJSONEncoder)
 
