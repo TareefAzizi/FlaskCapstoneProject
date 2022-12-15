@@ -15,6 +15,3 @@ We'll also learn some new concepts in JavaScrip to make the dashboard look good,
 7. JavaScript
 
 
-This project is a youtube tutorial series on my [channel](https://www.youtube.com/results?search_query=code+with+prince)
-
-Please like share and subscribe to my channel for more videos and fun to do projects.
